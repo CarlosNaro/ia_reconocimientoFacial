@@ -1,7 +1,9 @@
 import cv2
 import os
 
-dataPath = 'C:/Users/Developer/Desktop/Proyecto/Data' #Cambia a la ruta donde hayas almacenado Data
+# dataPath = 'C:/Users/Developer/Desktop/Proyecto/Data' #Cambia a la ruta donde hayas almacenado Data
+dataPath = 'E:\Desarrollo_Software\Python-IA\ia_reconocimientoFacial\Data' #Cambia a la ruta donde hayas almacenado Data
+
 imagePaths = os.listdir(dataPath)
 print('imagePaths=',imagePaths)
 
@@ -12,7 +14,10 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 # Leyendo el modelo
 #face_recognizer.read('modeloEigenFace.xml')
 #face_recognizer.read('modeloFisherFace.xml')
-face_recognizer.read('modeloLBPHFace.xml')
+#-----
+# face_recognizer.read('modeloLBPHFace.xml')
+face_recognizer.read('E:\Desarrollo_Software\Python-IA\ia_reconocimientoFacial\modeloLBPHFace.xml')
+
 
 #cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 cap = cv2.VideoCapture(0)

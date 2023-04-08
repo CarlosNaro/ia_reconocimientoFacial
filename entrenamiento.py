@@ -2,7 +2,8 @@ import cv2
 import os
 import numpy as np 
 
-dataPath = 'C:/Users/Developer/Desktop/Proyecto/Data'
+# dataPath = 'C:/Users/Developer/Desktop/Proyecto/Data'
+dataPath = 'E:\Desarrollo_Software\Python-IA\ia_reconocimientoFacial\Data'
 #procedemos alistar las carpetas 
 peopleList = os.listdir(dataPath)
 print('Lista de personas ', peopleList)
@@ -48,5 +49,7 @@ face_recognizer.train(facesData, np.array(labels))
 # Almacenando el modelo obtenido
 #face_recognizer.write('modeloEigenFace.xml')
 #face_recognizer.write('modeloFisherFace.xml')
-face_recognizer.write('modeloLBPHFace.xml')
+
+# face_recognizer.write('modeloLBPHFace.xml')
+face_recognizer.write('E:\Desarrollo_Software\Python-IA\ia_reconocimientoFacial\modeloLBPHFace.xml')
 print("Modelo almacenado...")
